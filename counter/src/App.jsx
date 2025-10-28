@@ -6,10 +6,23 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(3)
   const setdata=()=>{
-    setCount(count+1);
+    if (count>20) {
+      return 
+    }
+    else
+    {
+      setCount(count+1);
+    }
+    
   }
   const set=()=>{
-    setCount(count-1);
+    if (count==0) {
+      return 
+    }
+    else
+    {
+      setCount(count-1);
+    }
   }
 
   return (
