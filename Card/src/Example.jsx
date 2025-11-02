@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'   
-export default function Card2() {
+export default function Card2({user}) {
   return (
-    <div className="max-w-xs rounded-md shadow-md bg-black text-gray-100">
+    <div className="max-w-xs rounded-md shadow-md bg-black text-gray-100" style={{marginRight:'10px'}}>
       <img
         src="https://picsum.photos/301"
         alt=""
@@ -10,7 +10,7 @@ export default function Card2() {
       />
       <div className="flex flex-col justify-between p-6 space-y-8">
         <div className="space-y-2">
-          <h2 className="text-3xl font-semibold tracking-wide">Lorem</h2>
+          <h2 className="text-3xl font-semibold tracking-wide">{user}</h2>
           <p className="text-gray-400">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
             tempora ipsum soluta amet corporis accusantium aliquid consectetur
@@ -19,7 +19,7 @@ export default function Card2() {
         </div>
         <button
           type="button"
-          className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-gray-800 text-gray-200"
+          className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-gray-800 text-gray-900"
         >
           Read more
         </button>
